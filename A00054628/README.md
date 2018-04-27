@@ -84,7 +84,7 @@ Luego de eso oh-my-zsh quedará listo para su uso:
 -Instalando jq:  
 ![](Imagenes/instalando%20jq.png)  
 
--Creación ce courses.py:  
+-Creación de courses.py:  
 ![](Imagenes/coursesPy.png)  
 
 -Salida de la ejecución del script de python courses.py, peticiones curl y salida jq:  
