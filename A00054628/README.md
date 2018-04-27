@@ -57,16 +57,16 @@ Luego de eso oh-my-zsh quedará listo para su uso:
 ![](Imagenes/ctrl+R.png)  
 
 -Una ves hecho esto podremos hacer todas las funcionalidades de tmux con ``crtl+a``.  
--Para activar el modo vi, primero debemos instalarlo mediante el comando ``~ apt.get install vim``  
+-Para activar el modo vi, primero debemos instalarlo mediante el comando ``~ apt-get install vim``  
 ![](Imagenes/instalacion%20vim.png)  
 
 
 -Para activar este modo usamos ``ctrl+a [`` y podremos navegar a través del buffer:  
 ![](Imagenes/Modo%20vi.png)  
-![](Imagenes/Modo%20vi3.png)  
+![](Imagenes/Modo%20vi%203.png)  
 
 -Para usar el modo copia visual al portapapeles, solo debemos presionar espacio y movernos con las felchas para resaltar lo que queremos copiar:  
-![](Imagenes/Modo%20vi2.png)  
+![](Imagenes/Modo%20vi%202.png)  
 
 -También se puede usar enter para copiar y ``ctrl+a ]`` para pegar la selección.  
 
