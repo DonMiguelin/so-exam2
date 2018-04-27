@@ -1,4 +1,4 @@
-### EXAMEN 1  
+### EXAMEN 2  
 **Nombre:** Miguel Andrés Isaza Barona  
 **Código:** A00054628  
 **Materia:** Sistemas operacionales  
