@@ -80,16 +80,14 @@ Luego de eso oh-my-zsh quedará listo para su uso:
 -Salida del comando top:  
 ![](Imagenes/comando%20top.png)  
 
-
--Salida de la ejecución del script de python courses.py:  
-![](Imagenes/coursesPy.png)  
-
-
 -Peticiones por medio de curl a cada endpoint. Salida formateada con jq:  
 -Instalando jq:  
 ![](Imagenes/instalando%20jq.png)  
 
--Peticiones curl y salida jq:  
+-Creación ce courses.py:  
+![](Imagenes/coursesPy.png)  
+
+-Salida de la ejecución del script de python courses.py, peticiones curl y salida jq:  
 ![](Imagenes/curl_jq_1.png)  
 ![](Imagenes/curl_jq_2.png)  
 ![](Imagenes/curl_jq_3.png)  
