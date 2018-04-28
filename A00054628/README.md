@@ -104,10 +104,10 @@ Luego de eso oh-my-zsh quedará listo para su uso:
 El nombre del algoritmo es consumoPC, para la realización de ejecución en background, como una aplicación de línea de comandos obteniendo los valores de procesador, memoria y cpu se hizo lo siguiente:  
 
 -Primero se creó el archivo .py a ejecutar y se guardó en la carpeta codigo_punto6:  
-![](Imagenes/Carpeta%20con%20dl%20código_LI.jpg)  
+![](Imagenes/Carpeta%20con%20el%20código_LI.jpg)  
 
 -Para ejecutarlo como una aplicación de linea de comandos se utilizó la guía https://pythonhosted.org/pyCLI/, entonces en la máquina virtual se tenía que instalar pyCLI esto mediante el comando ``~ pip install pyCLI``:    
-![](Imagenes/Instalacion&20cli.png)  
+![](Imagenes/Instalacion%20cli.png)  
 
 En el algoritmo se pone import cli.app.  
 
