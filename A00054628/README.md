@@ -12,7 +12,7 @@
 -Para la instalación de Oh-my-zsh se ejecuta el siguiente comando: ``sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"``  
 -Para poder usar oh-my-zsh en cualquier otro usuario (en este caso operativos) se usa el siguiente comando:  
 ``export ZSH="$HOME/.dotfiles/oh-my-zsh"; sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"``  
-Luego de eso oh-my-zsh quedará listo para su uso.
+Luego de eso oh-my-zsh quedará listo para su uso.  
 -Luego de generar el token de acuerdo a la guía en https://github.com/ICESI/so-git/tree/master/00_github_intro, cuando hacemos el git clone por medio de comandos, en la url del repositorio cambia de la siguiente forma: ``~git clone https://xxxxxxxxxxxxxxxxxxxx@github.com/DonMiguelin/so-exam2.git`` (siendo x el valor del token), esto permite que cuando hagamos push por medio de comandos no sea necesario ingresar de nuevo el nombre de usuario y la contraseña, como se muestra en la siguiente imagen:  
 ![](Imagenes/comandos%20git.png)  
 ![](Imagenes/Creación%20carpeta.png)  
