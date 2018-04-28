@@ -8,22 +8,11 @@
 ### 3 Instalación y configuración de zsh y git  
 
 -Para la instalación de git se usa el siguiente comando: ``# apt-get install git``  
-![](Imagenes/git.png)  
-
 -Para la instalación de zsh se usa el siguiente comando: ``# apt-get install zsh``  
-![](Imagenes/Instalación%20zsh.png)  
-
 -Para la instalación de Oh-my-zsh se ejecuta el siguiente comando: ``sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"``  
-![](Imagenes/Instalación%20Oh%20my%20zsh.png)  
-
 -Para poder usar oh-my-zsh en cualquier otro usuario (en este caso operativos) se usa el siguiente comando:  
 ``export ZSH="$HOME/.dotfiles/oh-my-zsh"; sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"``  
-Luego de eso oh-my-zsh quedará listo para su uso:  
-![](Imagenes/Oh_my-zsh-userOperativos.png)  
-
--Aquí se muestra la edición de los plugins:  
-![](Imagenes/plugins%20autosuggestion.png)  
-
+Luego de eso oh-my-zsh quedará listo para su uso.
 -Luego de generar el token de acuerdo a la guía en https://github.com/ICESI/so-git/tree/master/00_github_intro, cuando hacemos el git clone por medio de comandos, en la url del repositorio cambia de la siguiente forma: ``~git clone https://xxxxxxxxxxxxxxxxxxxx@github.com/DonMiguelin/so-exam2.git`` (siendo x el valor del token), esto permite que cuando hagamos push por medio de comandos no sea necesario ingresar de nuevo el nombre de usuario y la contraseña, como se muestra en la siguiente imagen:  
 ![](Imagenes/comandos%20git.png)  
 ![](Imagenes/Creación%20carpeta.png)  
@@ -32,11 +21,7 @@ Luego de eso oh-my-zsh quedará listo para su uso:
 ### 4 Instalación y configuración del plugin zsh-autosuggestions  
 
 -Para la instalación de este plugin, se ejecuta el comando ``git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions``  
-![](Imagenes/Clonando%20plugin%20autosuggestion.png)  
-
 -Luego ``source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh`` esto para ejecutar los cambios que tenga el archivo zsh-autosuggestions.zsh, para editarlo se ejecuta ``~/.zsh/zsh-autosuggestions`` y una vez estemos ahí ejecutamos ``nano zsh-autosuggestions.zsh``  
-![](Imagenes/archivo%20a%20configurar.png)  
-
 -Para cambiar el color de resaltado nos vamos a la siguiente línea y cambiamos el valor 8 por yellow:  
 ![](Imagenes/Cambio%20de%20color%20resaltado.png)  
 -Volvemos a ejecutar ``source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh`` y observamos los cambios:  
@@ -45,18 +30,12 @@ Luego de eso oh-my-zsh quedará listo para su uso:
 
 ### 5 Instalación y configuración de tmux  
 -Instalamos tmux mediante el siguiente comando: ``~ apt-get install tmux -y``:  
-![](Imagenes/Instalación%20tmux.png)  
-
 -Luego corremos tmux mediante el comando ``~ tmux`` y debe aparecer lo siguiente:  
-![](Imagenes/corriendo%20tmux.png)  
-
 -Desde esa sesión, configuramos el archivo tmux.conf para dejar como prefijo la combinación de teclas ctrl + a:  
-![](Imagenes/configuraciones%20tmux.png)  
-
 -Para ejecutar esos cambios sin necesidad de reiniciar tmux, solo basta presionar ``ctrl+b`` y luego ``R``  
 ![](Imagenes/ctrl+R.png)  
 
- Una ves hecho esto podremos hacer todas las funcionalidades de tmux con ``crtl+a``.
+ Una ves hecho esto podremos hacer todas las funcionalidades de tmux con ``crtl+a``.  
  
 -Para activar el modo vi usamos ``ctrl+a [`` y podremos navegar a través del buffer:  
 ![](Imagenes/Modo%20vi.png)  
@@ -103,25 +82,18 @@ El nombre del algoritmo es consumo y se guardó en un archivo que se llama consu
 -Primero se creó el archivo .py a ejecutar y se guardó en la carpeta codigo_punto6:  
 ![](Imagenes/Carpeta%20con%20el%20código_LI.jpg)  
 
--Para ejecutarlo como una aplicación de linea de comandos se utilizó la guía https://pythonhosted.org/pyCLI/, entonces en la máquina virtual se tenía que instalar pyCLI esto mediante el comando ``~ pip install pyCLI``:    
-![](Imagenes/Instalacion%20cli.png)  
-
+-Para ejecutarlo como una aplicación de linea de comandos se utilizó la guía https://pythonhosted.org/pyCLI/, entonces en la máquina virtual se tenía que instalar pyCLI esto mediante el comando ``~ pip install pyCLI``.  
 En el algoritmo se pone import cli.app.  
 
--Debe obtener los valores de procesador, memoria y disco disponibles usando https://pypi.python.org/pypi/psutil/4.3.0:  
-Se instala psutil con el comando ``~ pip install psutil==4.3.0``:  
-![](Imagenes/psutil.png)  
-
+-Para obtener los valores de procesador, memoria y disco disponible se debe instalar psutil con el comando ``~ pip install psutil==4.3.0``.  
 En el algoritmo se pone import psutil.  
 
 -Debe publicar en un canal de slack los valores de porcentaje de cpu, memoria y disco disponibles:  
 
   1. Instalamos Slack client con el comando ``~ pip install slackClient``:  
-  ![](Imagenes/slack%20client%20install.png)  
+  En el algoritmo se pone from slackclient import SlackClient.  
   
-  En el algoritmo se pone from slackclient import SlackClient.
-  
-  2. Después de seguir la guía de https://github.com/slackapi/python-slackclient para generar el token del canal de slack, se debe copiar ese token en una línea de código llamada slack_token, usamos el algoritmo mostrado por la guia y finalmente en el text reemplazamos por los datos que debemos enviar al canal que son porcentaje de cpu, memoria y disco disponibles, entonces el algoritmo completo queda de la siguiente forma:  
+  2. Después de seguir la guía de https://github.com/slackapi/python-slackclient para generar el token del canal de slack y el algoritmo para enviar datos a un canal, se debe copiar el token generado en una línea de código llamada slack_token, y finalmente en text reemplazamos por los datos que debemos enviar al canal que son porcentaje de cpu, memoria y disco disponibles, la línea de código para ello se sacó de https://pypi.python.org/pypi/psutil/4.3.0, entonces el algoritmo completo queda de la siguiente forma:  
    ![](Imagenes/consumoPC.png)  
   
   3. como se pide ejecutar en background, configuré crontab para que el algoritmo se ejecutara cada 10 minutos, para hacer esto se usó el comando ``~ crontab -e``:  
