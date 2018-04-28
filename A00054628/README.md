@@ -56,12 +56,9 @@ Luego de eso oh-my-zsh quedará listo para su uso:
 -Para ejecutar esos cambios sin necesidad de reiniciar tmux, solo basta presionar ``ctrl+b`` y luego ``R``  
 ![](Imagenes/ctrl+R.png)  
 
--Una ves hecho esto podremos hacer todas las funcionalidades de tmux con ``crtl+a``.  
--Para activar el modo vi, primero debemos instalarlo mediante el comando ``~ apt-get install vim``  
-![](Imagenes/instalacion%20vim.png)  
-
-
--Para activar este modo usamos ``ctrl+a [`` y podremos navegar a través del buffer:  
+ Una ves hecho esto podremos hacer todas las funcionalidades de tmux con ``crtl+a``.
+ 
+-Para activar el modo vi usamos ``ctrl+a [`` y podremos navegar a través del buffer:  
 ![](Imagenes/Modo%20vi.png)  
 ![](Imagenes/Modo%20vi%203.png)  
 
