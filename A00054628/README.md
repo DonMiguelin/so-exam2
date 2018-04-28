@@ -101,5 +101,38 @@ Luego de eso oh-my-zsh quedará listo para su uso:
 
 ### 7 Aplicación en background y resultados en slack  
 
+El nombre del algoritmo es consumoPC, para la realización de ejecución en background, como una aplicación de línea de comandos obteniendo los valores de procesador, memoria y cpu se hizo lo siguiente:  
 
+-Primero se creó el archivo .py a ejecutar y se guardó en la carpeta codigo_punto6:  
+![](Imagenes/Carpeta%20con%20dl%20código_LI.jpg)  
 
+-Para ejecutarlo como una aplicación de linea de comandos se utilizó la guía https://pythonhosted.org/pyCLI/, entonces en la máquina virtual se tenía que instalar pyCLI esto mediante el comando ``~ pip install pyCLI``:    
+![](Imagenes/Instalacion&20cli.png)  
+
+En el algoritmo se pone import cli.app.  
+
+-Debe obtener los valores de procesador, memoria y disco disponibles usando https://pypi.python.org/pypi/psutil/4.3.0:  
+Se instala psutil con el comando ``~ pip install psutil==4.3.0``:  
+![](Imagenes/psutil.png)  
+
+En el algoritmo se pone import psutil.  
+
+-Debe publicar en un canal de slack los valores de porcentaje de cpu, memoria y disco disponibles:  
+
+  1. Instalamos Slack client con el comando ``~ pip install slackClient``:  
+  ![](Imagenes/slack%20client%20install.png)  
+  
+  En el algoritmo se pone from slackclient import SlackClient.
+  
+  2. Después de seguir la guía de https://github.com/slackapi/python-slackclient para generar el token del canal de slack, se debe copiar ese token en una línea de código llamada slack_token, usamos el algoritmo mostrado por la guia y finalmente en el text reemplazamos por los datos que debemos enviar al canal que son porcentaje de cpu, memoria y disco disponibles, entonces el algoritmo completo queda de la siguiente forma:  
+   ![](Imagenes/consumoPC.png)  
+  
+  3. como se pide ejecutar en background, configuré crontab para que el algoritmo se ejecutara cada 10 minutos, para hacer esto se usó el comando ``~ crontab -e``:  
+   ![](Imagenes/configuracionCrontab.png)  
+  
+  guardamos la configuración y nos cercioramos de que la configuración se haya guardado con ``~ crontab -l`` y debe salir lo siguiente:  
+   ![](Imagenes/mostrandoConfiguracion.png)  
+  
+  4. Finalmente esperamos a que el algorimto se ejecute cada 10 minutos y podemos observar en el canal de slack los resultados del algoritmo:  
+   ![](Imagenes/resultadosSlack_LI.jpg)  
+  
