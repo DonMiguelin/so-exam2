@@ -101,7 +101,7 @@ Luego de eso oh-my-zsh quedará listo para su uso:
 
 ### 7 Aplicación en background y resultados en slack  
 
-El nombre del algoritmo es consumoPC, para la realización de ejecución en background, como una aplicación de línea de comandos obteniendo los valores de procesador, memoria y cpu se hizo lo siguiente:  
+El nombre del algoritmo es consumo y se guardó en un archivo que se llama consumoPC.py, para la realización de ejecución en background, como una aplicación de línea de comandos obteniendo los valores de procesador, memoria y cpu se hizo lo siguiente:  
 
 -Primero se creó el archivo .py a ejecutar y se guardó en la carpeta codigo_punto6:  
 ![](Imagenes/Carpeta%20con%20el%20código_LI.jpg)  
