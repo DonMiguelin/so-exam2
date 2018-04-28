@@ -41,10 +41,10 @@ Luego de eso oh-my-zsh quedará listo para su uso.
 ![](Imagenes/Modo%20vi.png)  
 ![](Imagenes/Modo%20vi%203.png)  
 
--Para usar el modo copia visual al portapapeles, solo debemos presionar espacio y movernos con las felchas para resaltar lo que queremos copiar:  
+-Para usar el modo copia visual al portapapeles, solo debemos presionar espacio y movernos con las flechas para resaltar lo que queremos copiar:  
 ![](Imagenes/Modo%20vi%202.png)  
 
--También se puede usar enter para copiar y ``ctrl+a ]`` para pegar la selección.  
+-También se puede usar ``enter`` para copiar y ``ctrl+a ]`` para pegar la selección.  
 
 ### 6 Sesion tmux de nombre so-exam2  
 
