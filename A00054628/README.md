@@ -80,7 +80,7 @@ Luego de eso oh-my-zsh quedará listo para su uso.
 El nombre del algoritmo es consumo y se guardó en un archivo que se llama consumoPC.py, para la realización de ejecución en background, como una aplicación de línea de comandos obteniendo los valores de procesador, memoria y cpu se hizo lo siguiente:  
 
 -Primero se creó el archivo .py a ejecutar y se guardó en la carpeta codigo_punto6:  
-![](Imagenes/Carpeta%20con%20el%20código_LI.jpg)  
+![](Imagenes/Carpeta%20con%20código.jpg)  
 
 -Para ejecutarlo como una aplicación de linea de comandos se utilizó la guía https://pythonhosted.org/pyCLI/, entonces en la máquina virtual se tenía que instalar pyCLI esto mediante el comando ``~ pip install pyCLI``.  
 En el algoritmo se pone import cli.app.  
@@ -97,11 +97,11 @@ En el algoritmo se pone import psutil.
    ![](Imagenes/consumoPC.png)  
   
   3. como se pide ejecutar en background, configuré crontab para que el algoritmo se ejecutara cada 10 minutos, para hacer esto se usó el comando ``~ crontab -e``:  
-   ![](Imagenes/configuracionCrontab.png)  
+   ![](Imagenes/Crontab-e.png)  
   
   guardamos la configuración y nos cercioramos de que la configuración se haya guardado con ``~ crontab -l`` y debe salir lo siguiente:  
-   ![](Imagenes/mostrandoConfiguracion.png)  
+   ![](Imagenes/Crontab-l.png)  
   
   4. Finalmente esperamos a que el algorimto se ejecute cada 10 minutos y podemos observar en el canal de slack los resultados del algoritmo:  
-   ![](Imagenes/resultadosSlack_LI.jpg)  
+   ![](Imagenes/resultadosSlack.jpg)  
   
