@@ -107,14 +107,4 @@ En el algoritmo se pone import psutil.
    ![](Imagenes/Crontab-l.png)  
   
   4. Finalmente esperamos a que el algorimto se ejecute cada 10 minutos y podemos observar en el canal de slack los resultados del algoritmo:  
-   ![](Imagenes/resultadosSlack.jpg)  
-=======
-   ![](Imagenes/configuracionCrontab.png)  
-  
-  guardamos la configuración y nos cercioramos de que la configuración se haya guardado con ``~ crontab -l`` y debe salir lo siguiente:  
-   ![](Imagenes/mostrandoConfiguracion.png)  
-  
-  4. Finalmente esperamos a que el algorimto se ejecute cada 10 minutos y podemos observar en el canal de slack los resultados del algoritmo:  
-   ![](Imagenes/resultadosSlack_LI.jpg)  
-
-  
+   ![](Imagenes/resultadosSlack.jpg)
